@@ -18,9 +18,10 @@ if (theme) {
 one.addEventListener('click', ()=>{
     if (body.classList.contains('two')){
         body.classList.replace('two', 'one');
-
+        two.checked = false;
     } else if (body.classList.contains('three')) {
         body.classList.replace('three', 'one');
+        three.checked = false;
     }
     localStorage.setItem('theme', 'one');
 })
@@ -28,9 +29,10 @@ one.addEventListener('click', ()=>{
 two.addEventListener('click', ()=>{
     if (body.classList.contains('one')){
         body.classList.replace('one', 'two');
-
+        one.checked = false;
     } else if (body.classList.contains('three')) {
         body.classList.replace('three', 'two');
+        three.checked = false;
     }
     localStorage.setItem('theme', 'two');
 })
@@ -38,9 +40,10 @@ two.addEventListener('click', ()=>{
 three.addEventListener('click', ()=>{
     if (body.classList.contains('two')){
         body.classList.replace('two', 'three');
-
+        two.checked = false;
     } else if (body.classList.contains('one')) {
         body.classList.replace('one', 'three');
+        one.checked = false;
     }
     localStorage.setItem('theme', 'three');
 })
