@@ -37,37 +37,3 @@ function applyTheme(theme) {
 one.addEventListener('click', () => applyTheme('one'));
 two.addEventListener('click', () => applyTheme('two'));
 three.addEventListener('click', () => applyTheme('three'));
-
-/* 
-one.addEventListener('click', ()=>{
-    if (body.classList.contains('two')){
-        body.classList.replace('two', 'one');
-        two.checked = false;
-    } else if (body.classList.contains('three')) {
-        body.classList.replace('three', 'one');
-        three.checked = false;
-    }
-    localStorage.setItem('theme', 'one');
-})
-
-two.addEventListener('click', ()=>{
-    if (body.classList.contains('one')){
-        body.classList.replace('one', 'two');
-        one.checked = false;
-    } else if (body.classList.contains('three')) {
-        body.classList.replace('three', 'two');
-        three.checked = false;
-    }
-    localStorage.setItem('theme', 'two');
-})
-
-three.addEventListener('click', ()=>{
-    if (body.classList.contains('two')){
-        body.classList.replace('two', 'three');
-        two.checked = false;
-    } else if (body.classList.contains('one')) {
-        body.classList.replace('one', 'three');
-        one.checked = false;
-    }
-    localStorage.setItem('theme', 'three');
-}) */
