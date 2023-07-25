@@ -7,10 +7,17 @@ const body = document.body;
 // Apply cached theme on reload
 
 const theme = localStorage.getItem('theme');
+const radioButtons = document.querySelectorAll('input[name="option"]');
 
 
 if (theme) {
     body.classList.add(theme);
+    for (const radio of radioButtons) {
+        if (radio.value === theme){
+            radio.checked = true;
+            break;
+        }
+    }
 }
 
 // Event listeners
