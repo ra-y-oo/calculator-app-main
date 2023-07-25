@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
@@ -20,7 +21,7 @@
 <body class="three">
   <div class="container">
     <div class="calculator">
-      <div class="top">
+      <div class="top" id="top">
         <h1>calc</h1>
         <div class="theme">
           <div class="txt">
@@ -28,19 +29,22 @@
           </div>
           <div class="switch">
             <div class="header">
-              <span>1</span><span>2</span><span>3</span>
+              <label for="one">1</label>
+              <label for="two">2</label>
+              <label for="three">3</label>
             </div>
             <div class="btns">
-              <input type="radio" name="option" checked>
-              <input type="radio" name="option">
-              <input type="radio" name="option">
+
+              <input type="radio" name="option" id="one" checked>
+              <input type="radio" name="option" id="two">
+              <input type="radio" name="option" id="three">
             </div>
           </div>
         </div>
       </div>
         <form>
             <div class="display">
-                <input type="text" name="display">
+                <input type="text" name="display" id="display">
             </div>
             <div class="keypad-bg">
               <div class="all-keys">
