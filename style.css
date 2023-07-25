@@ -169,7 +169,7 @@
   box-shadow: none;
   border: none;
   background: var(--clr-screen-bg);
-  color: var(--clr-white-txt);
+  color: var(--clr-top-display);
   border-radius: 0.5rem;
   height: 60px;
 }
