@@ -26,7 +26,7 @@
   --clr-key-bg-grayish-2: hsl(45, 7%, 89%);
   --clr-key-shadow-grayish-2: hsl(35, 11%, 61%);
   /* Text */
-  --clr-key-txt-2: hsl(60, 10%, 19%);
+  --clr-key-txt-2: hsl(60, 9%, 19%);
   --clr-white-txt-2: hsl(0, 0%, 100%);
   /* three */
   /*  Backgrounds */
@@ -60,6 +60,7 @@
   /* Text */
   --clr-key-txt: hsl(221, 14%, 31%);
   --clr-white-txt: hsl(0, 0%, 100%);
+  --clr-top-display: hsl(0, 0%, 100%);
 }
 
 .two {
@@ -77,6 +78,7 @@
   /* Text */
   --clr-key-txt: var(--clr-key-txt-2);
   --clr-white-txt: var(--clr-white-txt-2);
+  --clr-top-display: var(--clr-key-txt-2);
 }
 
 .three {
@@ -94,7 +96,7 @@
   /* Text */
   --clr-key-txt: var(--clr-key-txt-three);
   --clr-white-txt: var(--clr-white-txt-three);
-  --dark-blue: var(--clr-blue-txt);
+  --clr-top-display: var(--clr-key-txt-three);
 }
 
 * {
@@ -119,7 +121,7 @@
 .calculator .top {
   display: flex;
   justify-content: space-between;
-  color: var(--clr-white-txt);
+  color: var(--clr-top-display);
 }
 .calculator .top .theme {
   display: flex;

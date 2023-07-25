@@ -62,7 +62,8 @@
      --clr-key-shadow-grayish: hsl(28, 16%, 65%);
      /* Text */
      --clr-key-txt: hsl(221, 14%, 31%);
-     --clr-white-txt: hsl(0, 0%, 100%);   
+     --clr-white-txt: hsl(0, 0%, 100%); 
+     --clr-top-display: hsl(0, 0%, 100%);  
 }
 
 .two{
@@ -80,6 +81,7 @@
     /* Text */
     --clr-key-txt: var(--clr-key-txt-2);
     --clr-white-txt: var(--clr-white-txt-2);
+    --clr-top-display: var(--clr-key-txt-2);
 }
 
 .three{
@@ -97,7 +99,7 @@
     /* Text */
     --clr-key-txt: var(--clr-key-txt-three);
     --clr-white-txt: var(--clr-white-txt-three);
-    --dark-blue: var(--clr-blue-txt);
+    --clr-top-display: var(--clr-key-txt-three);
     
 }
 
@@ -122,7 +124,7 @@
     .top{
         display: flex;
         justify-content: space-between;
-        color: var(--clr-white-txt);
+        color: var(--clr-top-display);
         .theme{
             display: flex;
             align-items: center;
