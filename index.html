@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <div class="top">
+        <h1>calc</h1>
+        <div class="theme">
+          <div class="txt">
+            THEME
+          </div>
+          <div class="switch">
+            <div class="header">
+              <span>1</span><span>2</span><span>3</span>
+            </div>
+            <div class="btns">
+              <input type="radio" name="option" checked>
+              <input type="radio" name="option">
+              <input type="radio" name="option">
+            </div>
+          </div>
+        </div>
+      </div>
+        <form>
+            <div class="display">
+                <input type="text" name="display">
+            </div>
+            <div class="keypad-bg">
+              <div class="all-keys">
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7'">
+                    <input type="button" value="8" onclick="display.value += '8'">
+                    <input type="button" value="9" onclick="display.value += '9'">
+                    <input type="button" value="DEL" onclick="display.value = display.value.toString().slice(0,-1)" class="gray">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4'">
+                    <input type="button" value="5" onclick="display.value += '5'">
+                    <input type="button" value="6" onclick="display.value += '6'">
+                    <input type="button" value="+" onclick="display.value += '+'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1'">
+                    <input type="button" value="2" onclick="display.value += '2'">
+                    <input type="button" value="3" onclick="display.value += '3'">
+                    <input type="button" value="-" onclick="display.value += '-'">
+                </div>
+                <div>
+                    <input type="button" value="."  onclick="display.value += '.'">
+                    <input type="button" value="0" onclick="display.value += '0'">
+                    <input type="button" value="/"  onclick="display.value += '/'">
+                    <input type="button" value="x" onclick="display.value += '*'">
+                </div>
+                <div>
+                  <input type="button" value="RESET" onclick="display.value = ''" class="wide gray">
+                  <input type="button" value="=" onclick="display.value = eval(display.value)" class="wide red">
+                </div>
+              </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
